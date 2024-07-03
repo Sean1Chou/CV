@@ -1,0 +1,237 @@
+%-------------------------
+% Resume in Latex
+% Author : Sean Chou
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Sean Chou} \\ \vspace{5pt}
+    \small
+	\faMobile \hspace{.5pt} \href{tel:0975061890}{+886(0)975061890}
+    $|$
+    \faEnvelopeO \hspace{.5pt} \href{mailto:yschoou@gmail.com}{yshcoou@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/sean-chou-58631213/}{LinkedIn}
+    $|$
+    \faCaretSquareORight \hspace{.5pt} {Available to Start after 2024-Sept-30}
+\end{center}
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Languages:}{ SystemVerilog, SVA, Verilog, C, assembly, Python, tcl, OCaml} \\ \vspace{3pt}
+        
+        \textbf{Methodologies:}{ UVM, formal verification, RIS/ISSCMP, portable stimulus } \\ \vspace{3pt}
+
+        \textbf{Design Knowledge:}{ ARM/RISC-V CPU arch/uarch, cache coherency, USB} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Anshingtek}{Hsinchu, Taiwan}
+      {Principal Manager}{Dec 2020 \textbf{--} Present}
+        \resumeItemListStart
+	    \resumeItem{ARM v9a small-core CPU IP co-DV Lead: 2022-2024 I lead around 40 DV engineers in our customer (ARM China) and Anshingtek, separated into 10 DV Units: 1 top level, 2 multi-unit level, 6 units and a formal team.}
+	    \resumeItem{Anshingtek co-Engineer Manager (manage 20+ engineers) - host Anshingtek monthly all-hands since 2022-Jan.} 
+	    \resumeItem{I created a tool to interpret ARMv9a ASL and deployed it to gem5 model, DPU/VPU/MU DV and ISA Formal.} 
+	    \resumeItem{I verified GIC CPU interface from zero to sign-off and FPU (MUL/FMA/DIV) formal equivalence w/ SoftFloat.} 
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {MediaTek. Inc}{Hsinchu, Taiwan}
+      {Senior Manager (lead 28 people DV team)}{Mar 2018 \textbf{--} Dec 2020}
+        \resumeItemListStart
+	    \resumeItem{DV of In-house RISC-V cores (based on UVM and Spike model)}
+                \resumeSubHeadingListStart
+	\small{\item{ Core 1: 2-way 6 stages in-order pipeline processor. FPU, L1, branch predict, exception/interrupt, debug, trace.}}
+	\small{\item{ Core 2: 3-way 8 stages with shared L2, vector extension and user defined extension. (only differences are listed)}}
+                \resumeSubHeadingListEnd
+    
+	    \resumeItem{DV of an In-house cache coherency interconnect for v8.0a cores such as Cortex-A53 with snoop filter.}
+	    \resumeItem{DV of Integrated ARM licensed CPU sub-system: multiple core scenarios based on portable stimulus.}
+	    \resumeItem{DV of in-house DLA: data types conversion, convolution, activation, compression, flow controller.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {MediaTek. Inc}{Hsinchu, Taiwan}
+      {Verification Methodology (CAD) Manager}{Mar 2013 \textbf{--} Mar 2018}
+        \resumeItemListStart
+	    \resumeItem{UVM/SV training, collaboration and deployment with needed teams such bus interconnect or ethernet switch.}
+	    \resumeItem{Emulators: Palladium, Zebu, Veloce: porting, speed optimize, enable peripherals and management}
+	    \resumeItem{In-house VIP/AIP and regression utilities (coverage, regression, permission management, CI)}
+	    \resumeItem{Establish Power Aware (UPF) simulaiton flow for phone; static flow: formal/SVA, CDC, lint}
+	    \resumeItem{DV related management: people, licenses, EDA collaboration, IT for LSF queue (machine slots).}
+        \resumeItemListEnd
+
+     \resumeSubheading
+      {MediaTek. Inc}{Hsinchu, Taiwan}
+      {Technical Manager}{June 2010 \textbf{--} Feb 2013}
+        \resumeItemListStart
+	    \resumeItem{USB 3.0 controller DV (2 DUT: xHCI Host and proprietary device): hands on and finish the 1st project (around 180 RTL bugs fixed in 10 months and make FPGA/Silicon mass production smoothly) then transfer to others.}
+	    \resumeItem{In charge of H/W accelerators flow and successfully deploy Palladium to modem team.}
+	    \resumeItem{Attend to DVCon 2012 and read all 2010-2011 DVCon Papers.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+      {Ambarella}{Hsinchu, Taiwan}
+      {Researcher}{Nov 2009 \textbf{--} May 2010}
+        \resumeItemListStart
+	    \resumeItem{Self study OVM and coached 3 members to verify USB20 Device and NAND Flush Controller.}
+        \resumeItemListEnd
+   
+      \resumeSubheading
+      {Sunplus}{Hsinchu, Taiwan}
+      {Technical Manager}{Jul 2002 \textbf{--} Oct 2009}
+        \resumeItemListStart
+	    \resumeItem{USB 1.0 controllers design from scratch alone. from read spec., understand the request from PCI-USB card, design RTL coding, setup FPGA environment, post-silicon validation, customer engagement.}
+	    \resumeItem{Lead 3 people-team for 2 USB 2.0 designs: standard OHCI/EHCI host and dual-role proprietary design}
+	    \resumeItem{Help to build a 14 people design/verification team in Chengdu at 2006. (they grew to 37 people in 2009) include recruiting/training/goal setting/tracking/review. (try to build DV to prevent bugs found by head quarter)}
+        \resumeItemListEnd
+ 
+  \resumeSubHeadingListEnd
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {National Chaio Tung University
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Hsinchu, Taiwan}
+      {Master's Degree in Electronics Engineering} {Sep 2000 \textbf{--} Jun 2002}
+      {Bachelor of Engineering - BE, Electronics Engineering}{Sep 1996 \textbf{--} Jun 2000}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
